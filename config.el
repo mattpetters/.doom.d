@@ -52,6 +52,9 @@
 (setq org-agenda-files (directory-files-recursively "~/code/org" "\\.org$"))
 
 (setq diary-file "~/code/org/diary")
+
+(setq org-todo-keywords
+      '((sequence "TODO" "IN-PROGRESS" "REVIEW" "|" "DONE" "CANCELLED")))
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
